@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name" translation_description="Safety Detection app [CHAR_LIMIT=40]">Insafety</string>
+    <string name="camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+
+    <string name="home">Home</string>
+    <string name="history">History</string>
+
+    <string-array name="data_date">
+        <item>21 Agustus 2020</item>
+        <item>20 Agustus 2020</item>
+        <item>19 Agustus 2020</item>
+        <item>18 Agustus 2020</item>
+        <item>17 Agustus 2020</item>
+        <item>16 Agustus 2020</item>
+    </string-array>
+    <string-array name="data_workers">
+        <item>70</item>
+        <item>50</item>
+        <item>67</item>
+        <item>78</item>
+        <item>68</item>
+        <item>69</item>
+    </string-array>
+
+    <string-array name="data_name">
+        <item>Ridho Saputra</item>
+        <item>Panggih Giri Samudra</item>
+        <item>Anika Putri Utami</item>
+        <item>Alif Farhan</item>
+        <item>Alfikri Djati</item>
+        <item>Laokta Roymarley</item>
+
+    </string-array>
+    <string-array name="data_detail">
+        <item>lengkap</item>
+        <item>masker</item>
+        <item>sarung tangan, masker</item>
+        <item>lengkap</item>
+        <item>helm</item>
+        <item>masker, helm</item>
+    </string-array>
+    <string-array name="data_result">
+        <item>DONE</item>
+        <item>DANGER</item>
+        <item>DANGER</item>
+        <item>DONE</item>
+        <item>DANGER</item>
+        <item>DANGER</item>
+    </string-array>
+</resources>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_background"
+    tools:context="com.eroh.mit.insafety.detection.arch.ui.fragment.home.HomeFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_xs"
+        android:paddingTop="@dimen/spacing_xs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_name_company" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_alt_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="KA"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_l"
+        app:layout_constraintBottom_toBottomOf="@id/image_company"
+        app:layout_constraintLeft_toLeftOf="@id/image_company"
+        app:layout_constraintRight_toRightOf="@id/image_company"
+        app:layout_constraintTop_toTopOf="@id/image_company" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="PT Karya Abadi"
+        android:textColor="@color/color_content_title"
+        android:textSize="@dimen/text_l"
+        app:layout_constraintLeft_toRightOf="@id/image_company"
+        app:layout_constraintTop_toTopOf="@id/image_company" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_sum_workers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_3xs"
+        android:drawableLeft="@drawable/ic_people"
+        android:drawablePadding="@dimen/spacing_2xs"
+        android:fontFamily="@font/nunito"
+        android:text="78 Pekerja"
+        android:textColor="@color/color_content_paragraph"
+        android:textSize="@dimen/text_xs"
+        app:layout_constraintLeft_toRightOf="@id/image_company"
+        app:layout_constraintTop_toBottomOf="@id/text_company" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_attend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_m"
+        android:layout_marginTop="@dimen/spacing_s"
+        android:layout_marginRight="@dimen/spacing_m"
+        android:background="@drawable/bg_card_primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_company">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_title_attend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Data Kedairan Pekerja"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_l"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_detail_attend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_2xs"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:fontFamily="@font/nunito"
+            android:text="Berikut rekapitulasi data kehadiran pekerja hari ini "
+            android:textColor="@color/color_white80"
+            android:textSize="@dimen/text_xs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_title_attend" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_attended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Hadir"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_detail_attend" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_not_attended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Tidak Hadir"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_attended" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_attended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="70 Pekerja"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xs"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_detail_attend" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_not_attended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="8 Pekerja"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xs"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_attended" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_archives"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_m"
+            android:text="Lihat Arsip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_not_attended" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_k3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_l"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Penerapan K3 Hari Ini"
+        android:textColor="@color/color_content_title"
+        android:textSize="@dimen/text_l"
+        app:layout_constraintLeft_toLeftOf="@id/layout_attend"
+        app:layout_constraintTop_toBottomOf="@id/layout_attend" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_m"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:layout_marginRight="@dimen/spacing_m"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_k3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_list_done" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_s"
+                android:layout_marginTop="@dimen/spacing_s"
+                android:layout_marginRight="@dimen/spacing_s"
+                android:fontFamily="@font/nunito"
+                android:text="APD Lengkap"
+                android:textColor="@color/color_content_title"
+                android:textSize="@dimen/text_xs"
+                app:layout_constraintLeft_toRightOf="@id/image_done"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_sum_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_2xs"
+                android:drawableLeft="@drawable/ic_people"
+                android:drawablePadding="@dimen/spacing_2xs"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:text="78 Pekerja"
+                android:textColor="@color/color_content_paragraph"
+                android:textSize="@dimen/text_2xs"
+                app:layout_constraintLeft_toLeftOf="@id/label_done"
+                app:layout_constraintTop_toBottomOf="@id/label_done" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_detail_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_s"
+                android:layout_marginRight="@dimen/spacing_s"
+                android:fontFamily="@font/nunito"
+                android:text="Detail"
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/text_2xs"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_sum_done" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_helm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_m"
+        android:layout_marginTop="@dimen/spacing_s"
+        android:layout_marginRight="@dimen/spacing_m"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_done">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_helm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_list_helm" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_helm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_s"
+                android:layout_marginTop="@dimen/spacing_s"
+                android:layout_marginRight="@dimen/spacing_s"
+                android:fontFamily="@font/nunito"
+                android:text="Tidak menggunakan helm pelindung"
+                android:textColor="@color/color_content_title"
+                android:textSize="@dimen/text_xs"
+                app:layout_constraintLeft_toRightOf="@id/image_helm"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_sum_helm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_2xs"
+                android:drawableLeft="@drawable/ic_people"
+                android:drawablePadding="@dimen/spacing_2xs"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:text="78 Pekerja"
+                android:textColor="@color/color_content_paragraph"
+                android:textSize="@dimen/text_2xs"
+                app:layout_constraintLeft_toLeftOf="@id/label_helm"
+                app:layout_constraintTop_toBottomOf="@id/label_helm" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_detail_helm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_s"
+                android:layout_marginRight="@dimen/spacing_s"
+                android:fontFamily="@font/nunito"
+                android:text="Detail"
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/text_2xs"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_sum_helm" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_m"
+        android:layout_marginTop="@dimen/spacing_s"
+        android:layout_marginRight="@dimen/spacing_m"
+        android:layout_marginBottom="@dimen/spacing_s"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_helm">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_list_mask" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_s"
+                android:layout_marginTop="@dimen/spacing_s"
+                android:layout_marginRight="@dimen/spacing_s"
+                android:fontFamily="@font/nunito"
+                android:text="Tidak menggunakan masker"
+                android:textColor="@color/color_content_title"
+                android:textSize="@dimen/text_xs"
+                app:layout_constraintLeft_toRightOf="@id/image_mask"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_sum_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_2xs"
+                android:drawableLeft="@drawable/ic_people"
+                android:drawablePadding="@dimen/spacing_2xs"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:text="78 Pekerja"
+                android:textColor="@color/color_content_paragraph"
+                android:textSize="@dimen/text_2xs"
+                app:layout_constraintLeft_toLeftOf="@id/label_mask"
+                app:layout_constraintTop_toBottomOf="@id/label_mask" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_detail_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_s"
+                android:layout_marginRight="@dimen/spacing_s"
+                android:fontFamily="@font/nunito"
+                android:text="Detail"
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/text_2xs"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_sum_mask" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

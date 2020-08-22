@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/spacing_m"
+    android:layout_marginRight="@dimen/spacing_m"
+    android:layout_marginBottom="@dimen/spacing_s"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_list_date" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_alt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="11"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xs"
+            app:layout_constraintBottom_toBottomOf="@id/image_date"
+            app:layout_constraintLeft_toLeftOf="@id/image_date"
+            app:layout_constraintRight_toRightOf="@id/image_date"
+            app:layout_constraintTop_toTopOf="@id/image_date" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_s"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginRight="@dimen/spacing_s"
+            android:fontFamily="@font/nunito"
+            android:text="21 Agustus 2020"
+            android:textColor="@color/color_content_title"
+            android:textSize="@dimen/text_xs"
+            app:layout_constraintLeft_toRightOf="@id/image_date"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_workers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2xs"
+            android:drawableLeft="@drawable/ic_people"
+            android:drawablePadding="@dimen/spacing_2xs"
+            android:fontFamily="@font/nunito_semibold"
+            android:gravity="center"
+            android:text="78 Pekerja"
+            android:textColor="@color/color_content_paragraph"
+            android:textSize="@dimen/text_2xs"
+            app:layout_constraintLeft_toLeftOf="@id/text_date"
+            app:layout_constraintTop_toBottomOf="@id/text_date" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_detail_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_s"
+            android:layout_marginRight="@dimen/spacing_s"
+            android:fontFamily="@font/nunito"
+            android:text="Detail"
+            android:textColor="@color/color_primary"
+            android:textSize="@dimen/text_2xs"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_workers" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

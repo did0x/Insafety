@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.ObjectDetection" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/bg_button_white</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/text_m</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:paddingTop">@dimen/spacing_m</item>
+        <item name="android:paddingBottom">@dimen/spacing_m</item>
+        <item name="android:paddingLeft">@dimen/spacing_xl</item>
+        <item name="android:paddingRight">@dimen/spacing_xl</item>
+    </style>
+
+    <style name="Button.Primary" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/text_m</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:paddingTop">@dimen/spacing_m</item>
+        <item name="android:paddingBottom">@dimen/spacing_m</item>
+        <item name="android:paddingLeft">@dimen/spacing_xl</item>
+        <item name="android:paddingRight">@dimen/spacing_xl</item>
+    </style>
+
+    <style name="TextAppearance.Medium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Regular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/nunito</item>
+    </style>
+</resources>
