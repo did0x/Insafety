@@ -30,6 +30,18 @@
         <item name="android:paddingRight">@dimen/spacing_xl</item>
     </style>
 
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/color_content_paragraph</item>
+        <item name="android:textSize">@dimen/text_s</item>
+        <item name="android:textColor">@color/color_content_title</item>
+        <item name="android:background">@drawable/bg_input_primary_outline</item>
+        <item name="android:paddingTop">@dimen/spacing_m</item>
+        <item name="android:paddingBottom">@dimen/spacing_m</item>
+        <item name="android:paddingLeft">@dimen/spacing_s</item>
+        <item name="android:paddingRight">@dimen/spacing_s</item>
+    </style>
+
     <style name="TextAppearance.Medium" parent="android:TextAppearance">
         <item name="android:fontFamily">@font/nunito_semibold</item>
     </style>
